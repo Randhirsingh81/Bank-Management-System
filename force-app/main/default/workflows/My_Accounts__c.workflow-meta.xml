@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Low_balance_email_alert</fullName>
+        <description>Low balance email alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Balance_alert/Low_Balance_alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Weekly_Account_Summary</fullName>
+        <description>Weekly Account Summary</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>Balance_alert/Weekly_Account_Summary</template>
+    </alerts>
+</Workflow>

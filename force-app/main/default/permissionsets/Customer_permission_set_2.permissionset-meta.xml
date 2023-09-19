@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>Bank_Management_System</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Details_Updating_Requests__c.Updation_request_status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Customer permission set 2</label>
+    <license>Salesforce Platform</license>
+    <tabSettings>
+        <tab>Details_Updating_Requests__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

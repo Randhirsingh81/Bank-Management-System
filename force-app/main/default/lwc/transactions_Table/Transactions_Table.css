@@ -1,0 +1,13 @@
+.table{
+    color: rgb(44, 115, 221);
+    align-items: center;
+}
+
+.button{
+   align-items: center;
+}
+.tablehead{
+    background-color: blue;
+    align-items: center;
+    align-self: center;
+}

@@ -1,0 +1,19 @@
+<template>
+
+    <div  class="parent">
+
+  <Div  class="custom-card">
+    <h1 style="text-align: center;font-weight: bold; font-size: large; ">Customer Registration Form</h1>
+    <lightning-record-form 
+    object-api-name={objectApiName}
+    fields={fields}
+    onsuccess={handleSuccess}
+    oncancel={handleCancel}
+    class="custom-Form">
+  
+</lightning-record-form>
+
+</Div>
+</div>
+
+</template>

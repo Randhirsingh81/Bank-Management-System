@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>rejected</fullName>
+        <description>rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Approval_request/Customer_Details_Update_Request_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>success</fullName>
+        <description>success</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Approval_request/Account_detail_updation_Request_success</template>
+    </alerts>
+    <alerts>
+        <fullName>successs</fullName>
+        <description>successs</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Approval_request/Account_detail_updation_Request_success</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>update_status</fullName>
+        <field>Updation_request_status__c</field>
+        <literalValue>Updated Successfully</literalValue>
+        <name>update status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>update_statuss</fullName>
+        <field>Updation_request_status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>update statuss</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>
