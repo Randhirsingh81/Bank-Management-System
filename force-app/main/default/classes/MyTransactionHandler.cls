@@ -15,40 +15,41 @@ public class MyTransactionHandler {
     }
     
     
-    public static void updatetotaldepositsAndWithdrawals(List<My_Transactions__c> transactions) {
-        List<My_Accounts__c> accountsToUpdate = new List<My_Accounts__c>();
+   public static void updatetotaldepositsAndWithdrawals(List<My_Transactions__c> transactions) {
+       
+    // Create a map to store account records for updates
+    Map<Id, My_Accounts__c> accountMap = new Map<Id, My_Accounts__c>();
 
-        for (My_Transactions__c transact : transactions) {
-            if (transact.Transaction_Status__c == 'Success' &&
-                transact.My_Accountss__c != null) {
+    for (My_Transactions__c transact : transactions) {
+        if (transact.Transaction_Status__c == 'Success' && transact.My_Accountss__c != null) {
+            Id accountId = transact.My_Accountss__c;
 
-                if (transact.Transaction_Type__c == 'deposit') {
-                    // Query the related account and calculate the total deposits
-                    My_Accounts__c account = [SELECT Id, Total_Deposits__c FROM My_Accounts__c
-                                               WHERE Id = :transact.My_Accountss__c];
-                    Decimal totalDeposits = account.Total_Deposits__c + transact.Amount__c;
+            // Check if the account is already in the map; if not, query and add it
+            if (!accountMap.containsKey(accountId)) {
+                accountMap.put(accountId, new My_Accounts__c(
+                    Id = accountId,
+                    Total_Deposits__c = 0, // Initialize to zero if it's a new entry
+                    Total_Withdrawals__c = 0 // Initialize to zero if it's a new entry
+                ));
+            }
 
-                    // Update the account's Total Deposits field
-                    account.Total_Deposits__c = totalDeposits;
-                    accountsToUpdate.add(account);
-                } else if (transact.Transaction_Type__c == 'withdrawal') {
-                    // Query the related account and calculate the total withdrawals
-                    My_Accounts__c account = [SELECT Id, Total_Withdrawals__c FROM My_Accounts__c
-                                               WHERE Id = :transact.My_Accountss__c];
-                    Decimal totalWithdrawals = account.Total_Withdrawals__c + transact.Amount__c;
+            My_Accounts__c account = accountMap.get(accountId);
 
-                    // Update the account's Total Withdrawals field
-                    account.Total_Withdrawals__c = totalWithdrawals;
-                    accountsToUpdate.add(account);
-                }
+            if (transact.Transaction_Type__c == 'deposit') {
+                // Calculate and update the total deposits
+                account.Total_Deposits__c += transact.Amount__c;
+            } else if (transact.Transaction_Type__c == 'withdrawal') {
+                // Calculate and update the total withdrawals
+                account.Total_Withdrawals__c += transact.Amount__c;
             }
         }
-
-        // Perform the update if there are records to update
-        if (!accountsToUpdate.isEmpty()) {
-            update accountsToUpdate;
-        }
     }
-    
+
+    // Perform the update if there are records to update
+    if (!accountMap.isEmpty()) {
+        update accountMap.values();
+    }
+}
+
     
 }
