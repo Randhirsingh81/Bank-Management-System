@@ -23,10 +23,10 @@ public class Test_myTransactionsController {
   
         // Create test data for My_Accounts__c records
         
-  My_Accounts__c accounts = [SELECT Id, Name, Balance__c, Account_Type__c 
+        My_Accounts__c accounts = [SELECT Id, Name, Balance__c, Account_Type__c 
                              FROM My_Accounts__c WHERE My_Customers__c = :customertest.Id];
  
-         system.debug(accounts);  // just for self check in debug
+         system.debug(accounts);
         
         
          // Create test data for My_Transactions__c records
@@ -50,7 +50,7 @@ public class Test_myTransactionsController {
     @isTest
     static void testGetTransactions() {
         // Create test data
-       testdata();
+       //testdata();
         
         // Call the getTransactions method
         List<My_Transactions__c> result = MyTransactionsController.getTransactions();

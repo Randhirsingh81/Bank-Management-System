@@ -1,4 +1,7 @@
 public class MyCustomerNewAccountHandler {
+    
+    // Handle new account creation based on account creation status
+ 
     public static void handleNewAccountCreation(List<My_Customers__c> newCustomers, Map<Id, My_Customers__c> oldCustomerMap) {
         List<My_Accounts__c> newBankAccounts = new List<My_Accounts__c>();
 
@@ -17,7 +20,8 @@ public class MyCustomerNewAccountHandler {
         }
 
         // Query My_Customers__c records to get the related data
-        Map<Id, My_Customers__c> customerMap = new Map<Id, My_Customers__c>([SELECT Id, Name, Account_Type__c, First_Deposit_Amount__c FROM My_Customers__c WHERE Id IN :customerIdsToProcess]);
+        Map<Id, My_Customers__c> customerMap = new Map<Id, My_Customers__c>([SELECT Id, Name, Account_Type__c,OwnerId, First_Deposit_Amount__c
+                                                                             FROM My_Customers__c WHERE Id IN :customerIdsToProcess]);
 
         // Create My_Accounts__c records based on the selected My_Customers__c records
         for (Id customerId : customerIdsToProcess) {
@@ -27,7 +31,8 @@ public class MyCustomerNewAccountHandler {
                 Total_Deposits__c = customer.First_Deposit_Amount__c,
                 Account_Type__c = customer.Account_Type__c,
                 Balance__c = customer.First_Deposit_Amount__c,
-                My_Customers__c = customer.Id
+                My_Customers__c = customer.Id,
+                Owner__c =customer.OwnerId
             );
             newBankAccounts.add(newBankAccount);
         }
@@ -37,4 +42,22 @@ public class MyCustomerNewAccountHandler {
             insert newBankAccounts;
         }
     }
+    
+    
+   
+   
+     public static void Check(List<My_Customers__c> custList){     // duplicate My customers  check method 
+    
+    // get the id of the current logged in user  
+    List<My_Customers__c> createdRecord = [SELECT Id FROM My_Customers__c WHERE CreatedById =: UserInfo.getUserId()];
+     if(!createdRecord.isEmpty()){     // Check for user has created
+        
+            for(My_Customers__c h : custList){
+                h.addError('You can only create one "My Customers" record.'+ UserInfo.getName() +' Has Created Record. ');
+            }
+        }
+    }
+    
+    
+ 
 }
