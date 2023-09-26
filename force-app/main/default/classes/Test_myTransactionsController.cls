@@ -3,11 +3,15 @@ public class Test_myTransactionsController {
     
     
 @Testsetup
+/**
+ * Test data setup method.
+ * This method sets up test data, including customer records, account creation, and transactions.
+ */
     static void testdata() {
         
          // Create test data for My_Customers__c records
-         
-       My_Customers__c customertest = new My_Customers__c(
+        
+    My_Customers__c customertest = new My_Customers__c(
             Name = 'Customer 1',
             Account_Creation_Status__c = 'Under Review', // Initial status
             Account_Type__c = 'Saving',
@@ -20,20 +24,15 @@ public class Test_myTransactionsController {
         
         customertest.Account_Creation_Status__c = 'Account Created Successfully';
         update customertest;
-  
         // Create test data for My_Accounts__c records
         
         My_Accounts__c accounts = [SELECT Id, Name, Balance__c, Account_Type__c 
-                             FROM My_Accounts__c WHERE My_Customers__c = :customertest.Id];
- 
-         system.debug(accounts);
+                                    FROM My_Accounts__c WHERE My_Customers__c = :customertest.Id];
         
         
          // Create test data for My_Transactions__c records
-                 
-  List<My_Transactions__c> transactions = new List<My_Transactions__c>();
-         
-          for (Integer i = 1; i <= 10; i++) {
+    List<My_Transactions__c> transactions = new List<My_Transactions__c>();
+        for (Integer i = 1; i <= 10; i++) {
             transactions.add(new My_Transactions__c(
                 Amount__c = 1000 * i,  // Transaction amount
                 My_Accountss__c = accounts.id,  // Sample related account
@@ -44,8 +43,11 @@ public class Test_myTransactionsController {
         // Insert the test data
         insert transactions;
     }
-    
-    
+
+    /**
+     * Test the getTransactions method.
+     * This method tests the behavior of the getTransactions method in the MyTransactionsController class.
+     */
      // Test the getTransactions method
     @isTest
     static void testGetTransactions() {

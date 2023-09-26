@@ -1,7 +1,11 @@
 public class MyCustomerNewAccountHandler {
-    
-    // Handle new account creation based on account creation status
- 
+/**
+     * method handleNewAccountCreation Handles new account creation based on the account creation status of My_Customers__c records.
+     *
+     * @param newCustomers   List of new My_Customers__c records.
+     * @param oldCustomerMap Map of old My_Customers__c records (before update).
+     */
+
     public static void handleNewAccountCreation(List<My_Customers__c> newCustomers, Map<Id, My_Customers__c> oldCustomerMap) {
         List<My_Accounts__c> newBankAccounts = new List<My_Accounts__c>();
 
@@ -21,7 +25,7 @@ public class MyCustomerNewAccountHandler {
 
         // Query My_Customers__c records to get the related data
         Map<Id, My_Customers__c> customerMap = new Map<Id, My_Customers__c>([SELECT Id, Name, Account_Type__c,OwnerId, First_Deposit_Amount__c
-                                                                             FROM My_Customers__c WHERE Id IN :customerIdsToProcess]);
+                                                                            FROM My_Customers__c WHERE Id IN :customerIdsToProcess]);
 
         // Create My_Accounts__c records based on the selected My_Customers__c records
         for (Id customerId : customerIdsToProcess) {
@@ -42,10 +46,12 @@ public class MyCustomerNewAccountHandler {
             insert newBankAccounts;
         }
     }
+    /**
+     * Checks for duplicate 'My Customers' records created by the same user and adds an error message if found.
+     *
+     * @param custList List of My_Customers__c records to check for duplicates.
+     */
     
-    
-   
-   
      public static void Check(List<My_Customers__c> custList){     // duplicate My customers  check method 
     
     // get the id of the current logged in user  
@@ -59,5 +65,4 @@ public class MyCustomerNewAccountHandler {
     }
     
     
- 
 }

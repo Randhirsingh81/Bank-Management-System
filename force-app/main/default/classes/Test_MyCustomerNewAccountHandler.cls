@@ -1,8 +1,13 @@
+/**
+ * Test_MyCustomerNewAccountHandler - Test class for testing the trigger logic in MyCustomerNewAccountHandler.
+ * This test class validates the trigger logic that creates My_Accounts__c records when My_Customers__c records are updated.
+ */
 @isTest
 public class Test_MyCustomerNewAccountHandler {
     
-    // Test method to cover the trigger logic
-    
+    /**
+     * Test method to cover the trigger logic.
+     */
     static testMethod void testTriggerLogic() {
         
         // Create test data for My_Customers__c records
