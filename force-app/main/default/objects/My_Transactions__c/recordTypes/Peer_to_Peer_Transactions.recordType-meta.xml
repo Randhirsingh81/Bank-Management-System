@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Peer_to_Peer_Transactions</fullName>
+    <active>true</active>
+    <label>Peer to Peer Transactions</label>
+    <picklistValues>
+        <picklist>Transaction_Status__c</picklist>
+        <values>
+            <fullName>Pending</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Success</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transaction_Type__c</picklist>
+        <values>
+            <fullName>Credited</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debited</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

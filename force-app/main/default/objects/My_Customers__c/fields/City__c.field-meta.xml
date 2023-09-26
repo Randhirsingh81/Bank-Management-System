@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>City__c</fullName>
+    <externalId>false</externalId>
+    <label>City</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Country__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Delhi</fullName>
+                <default>false</default>
+                <label>New Delhi</label>
+            </value>
+            <value>
+                <fullName>Gorakhpur</fullName>
+                <default>false</default>
+                <label>Gorakhpur</label>
+            </value>
+            <value>
+                <fullName>Mumbai</fullName>
+                <default>false</default>
+                <label>Mumbai</label>
+            </value>
+            <value>
+                <fullName>Bangalore</fullName>
+                <default>false</default>
+                <label>Bangalore</label>
+            </value>
+            <value>
+                <fullName>Kolkata</fullName>
+                <default>false</default>
+                <label>Kolkata</label>
+            </value>
+            <value>
+                <fullName>Chennai</fullName>
+                <default>false</default>
+                <label>Chennai</label>
+            </value>
+            <value>
+                <fullName>Hyderabad</fullName>
+                <default>false</default>
+                <label>Hyderabad</label>
+            </value>
+            <value>
+                <fullName>Jaipur</fullName>
+                <default>false</default>
+                <label>Jaipur</label>
+            </value>
+            <value>
+                <fullName>Agra</fullName>
+                <default>false</default>
+                <label>Agra</label>
+            </value>
+            <value>
+                <fullName>Varanasi</fullName>
+                <default>false</default>
+                <label>Varanasi</label>
+            </value>
+            <value>
+                <fullName>Pune</fullName>
+                <default>false</default>
+                <label>Pune</label>
+            </value>
+            <value>
+                <fullName>Ahmedabad</fullName>
+                <default>false</default>
+                <label>Ahmedabad</label>
+            </value>
+            <value>
+                <fullName>Chandigarh</fullName>
+                <default>false</default>
+                <label>Chandigarh</label>
+            </value>
+            <value>
+                <fullName>Kochi</fullName>
+                <default>false</default>
+                <label>Kochi</label>
+            </value>
+            <value>
+                <fullName>Goa</fullName>
+                <default>false</default>
+                <label>Goa</label>
+            </value>
+            <value>
+                <fullName>Lucknow</fullName>
+                <default>false</default>
+                <label>Lucknow</label>
+            </value>
+            <value>
+                <fullName>Amritsar</fullName>
+                <default>false</default>
+                <label>Amritsar</label>
+            </value>
+            <value>
+                <fullName>Mysore</fullName>
+                <default>false</default>
+                <label>Mysore</label>
+            </value>
+            <value>
+                <fullName>Udaipur</fullName>
+                <default>false</default>
+                <label>Udaipur</label>
+            </value>
+            <value>
+                <fullName>Bhubaneswar</fullName>
+                <default>false</default>
+                <label>Bhubaneswar</label>
+            </value>
+            <value>
+                <fullName>Nagpur</fullName>
+                <default>false</default>
+                <label>Nagpur</label>
+            </value>
+            <value>
+                <fullName>Indore</fullName>
+                <default>false</default>
+                <label>Indore</label>
+            </value>
+            <value>
+                <fullName>Kanpur</fullName>
+                <default>false</default>
+                <label>Kanpur</label>
+            </value>
+            <value>
+                <fullName>Patiala</fullName>
+                <default>false</default>
+                <label>Patiala</label>
+            </value>
+            <value>
+                <fullName>Coimbatore</fullName>
+                <default>false</default>
+                <label>Coimbatore</label>
+            </value>
+            <value>
+                <fullName>Vadodara</fullName>
+                <default>false</default>
+                <label>Vadodara</label>
+            </value>
+            <value>
+                <fullName>Surat</fullName>
+                <default>false</default>
+                <label>Surat</label>
+            </value>
+            <value>
+                <fullName>Thiruvananthapuram</fullName>
+                <default>false</default>
+                <label>Thiruvananthapuram</label>
+            </value>
+            <value>
+                <fullName>Bhopal</fullName>
+                <default>false</default>
+                <label>Bhopal</label>
+            </value>
+            <value>
+                <fullName>Rajkot</fullName>
+                <default>false</default>
+                <label>Rajkot</label>
+            </value>
+            <value>
+                <fullName>Kathmandu</fullName>
+                <default>false</default>
+                <label>Kathmandu</label>
+            </value>
+            <value>
+                <fullName>Pokhara</fullName>
+                <default>false</default>
+                <label>Pokhara</label>
+            </value>
+            <value>
+                <fullName>Lalitpur (Patan)</fullName>
+                <default>false</default>
+                <label>Lalitpur (Patan)</label>
+            </value>
+            <value>
+                <fullName>Bhaktapur</fullName>
+                <default>false</default>
+                <label>Bhaktapur</label>
+            </value>
+            <value>
+                <fullName>Nepalgunj</fullName>
+                <default>false</default>
+                <label>Nepalgunj</label>
+            </value>
+            <value>
+                <fullName>Biratnagar</fullName>
+                <default>false</default>
+                <label>Biratnagar</label>
+            </value>
+            <value>
+                <fullName>Birgunj</fullName>
+                <default>false</default>
+                <label>Birgunj</label>
+            </value>
+            <value>
+                <fullName>Janakpur</fullName>
+                <default>false</default>
+                <label>Janakpur</label>
+            </value>
+            <value>
+                <fullName>Dharan</fullName>
+                <default>false</default>
+                <label>Dharan</label>
+            </value>
+            <value>
+                <fullName>Butwal</fullName>
+                <default>false</default>
+                <label>Butwal</label>
+            </value>
+            <value>
+                <fullName>Hetauda</fullName>
+                <default>false</default>
+                <label>Hetauda</label>
+            </value>
+            <value>
+                <fullName>Dhangadhi</fullName>
+                <default>false</default>
+                <label>Dhangadhi</label>
+            </value>
+            <value>
+                <fullName>New York City, New York</fullName>
+                <default>false</default>
+                <label>New York City, New York</label>
+            </value>
+            <value>
+                <fullName>Los Angeles, California</fullName>
+                <default>false</default>
+                <label>Los Angeles, California</label>
+            </value>
+            <value>
+                <fullName>Chicago, Illinois</fullName>
+                <default>false</default>
+                <label>Chicago, Illinois</label>
+            </value>
+            <value>
+                <fullName>Houston, Texas</fullName>
+                <default>false</default>
+                <label>Houston, Texas</label>
+            </value>
+            <value>
+                <fullName>Phoenix, Arizona</fullName>
+                <default>false</default>
+                <label>Phoenix, Arizona</label>
+            </value>
+            <value>
+                <fullName>Philadelphia, Pennsylvania</fullName>
+                <default>false</default>
+                <label>Philadelphia, Pennsylvania</label>
+            </value>
+            <value>
+                <fullName>San Antonio, Texas</fullName>
+                <default>false</default>
+                <label>San Antonio, Texas</label>
+            </value>
+            <value>
+                <fullName>San Diego, California</fullName>
+                <default>false</default>
+                <label>San Diego, California</label>
+            </value>
+            <value>
+                <fullName>Dallas, Texas</fullName>
+                <default>false</default>
+                <label>Dallas, Texas</label>
+            </value>
+            <value>
+                <fullName>San Jose, California</fullName>
+                <default>false</default>
+                <label>San Jose, California</label>
+            </value>
+            <value>
+                <fullName>Austin, Texas</fullName>
+                <default>false</default>
+                <label>Austin, Texas</label>
+            </value>
+            <value>
+                <fullName>Jacksonville, Florida</fullName>
+                <default>false</default>
+                <label>Jacksonville, Florida</label>
+            </value>
+            <value>
+                <fullName>San Francisco, California</fullName>
+                <default>false</default>
+                <label>San Francisco, California</label>
+            </value>
+            <value>
+                <fullName>Columbus, Ohio</fullName>
+                <default>false</default>
+                <label>Columbus, Ohio</label>
+            </value>
+            <value>
+                <fullName>Fort Worth, Texas</fullName>
+                <default>false</default>
+                <label>Fort Worth, Texas</label>
+            </value>
+            <value>
+                <fullName>Indianapolis, Indiana</fullName>
+                <default>false</default>
+                <label>Indianapolis, Indiana</label>
+            </value>
+            <value>
+                <fullName>Charlotte, North Carolina</fullName>
+                <default>false</default>
+                <label>Charlotte, North Carolina</label>
+            </value>
+            <value>
+                <fullName>Seattle, Washington</fullName>
+                <default>false</default>
+                <label>Seattle, Washington</label>
+            </value>
+            <value>
+                <fullName>Denver, Colorado</fullName>
+                <default>false</default>
+                <label>Denver, Colorado</label>
+            </value>
+            <value>
+                <fullName>Washington, D.C.</fullName>
+                <default>false</default>
+                <label>Washington, D.C.</label>
+            </value>
+            <value>
+                <fullName>Boston, Massachusetts</fullName>
+                <default>false</default>
+                <label>Boston, Massachusetts</label>
+            </value>
+            <value>
+                <fullName>El Paso, Texas</fullName>
+                <default>false</default>
+                <label>El Paso, Texas</label>
+            </value>
+            <value>
+                <fullName>Nashville, Tennessee</fullName>
+                <default>false</default>
+                <label>Nashville, Tennessee</label>
+            </value>
+            <value>
+                <fullName>Detroit, Michigan</fullName>
+                <default>false</default>
+                <label>Detroit, Michigan</label>
+            </value>
+            <value>
+                <fullName>Portland, Oregon</fullName>
+                <default>false</default>
+                <label>Portland, Oregon</label>
+            </value>
+            <value>
+                <fullName>Las Vegas, Nevada</fullName>
+                <default>false</default>
+                <label>Las Vegas, Nevada</label>
+            </value>
+            <value>
+                <fullName>Oklahoma City, Oklahoma</fullName>
+                <default>false</default>
+                <label>Oklahoma City, Oklahoma</label>
+            </value>
+            <value>
+                <fullName>Memphis, Tennessee</fullName>
+                <default>false</default>
+                <label>Memphis, Tennessee</label>
+            </value>
+            <value>
+                <fullName>Louisville, Kentucky</fullName>
+                <default>false</default>
+                <label>Louisville, Kentucky</label>
+            </value>
+            <value>
+                <fullName>Baltimore, Maryland</fullName>
+                <default>false</default>
+                <label>Baltimore, Maryland</label>
+            </value>
+            <value>
+                <fullName>Colombo</fullName>
+                <default>false</default>
+                <label>Colombo</label>
+            </value>
+            <value>
+                <fullName>Kandy</fullName>
+                <default>false</default>
+                <label>Kandy</label>
+            </value>
+            <value>
+                <fullName>Galle</fullName>
+                <default>false</default>
+                <label>Galle</label>
+            </value>
+            <value>
+                <fullName>Anuradhapura</fullName>
+                <default>false</default>
+                <label>Anuradhapura</label>
+            </value>
+            <value>
+                <fullName>Jaffna</fullName>
+                <default>false</default>
+                <label>Jaffna</label>
+            </value>
+            <value>
+                <fullName>Negombo</fullName>
+                <default>false</default>
+                <label>Negombo</label>
+            </value>
+            <value>
+                <fullName>Matara</fullName>
+                <default>false</default>
+                <label>Matara</label>
+            </value>
+            <value>
+                <fullName>Trincomalee</fullName>
+                <default>false</default>
+                <label>Trincomalee</label>
+            </value>
+            <value>
+                <fullName>Batticaloa</fullName>
+                <default>false</default>
+                <label>Batticaloa</label>
+            </value>
+            <value>
+                <fullName>Polonnaruwa</fullName>
+                <default>false</default>
+                <label>Polonnaruwa</label>
+            </value>
+            <value>
+                <fullName>Nuwara Eliya</fullName>
+                <default>false</default>
+                <label>Nuwara Eliya</label>
+            </value>
+            <value>
+                <fullName>Kurunegala</fullName>
+                <default>false</default>
+                <label>Kurunegala</label>
+            </value>
+            <value>
+                <fullName>Ratnapura</fullName>
+                <default>false</default>
+                <label>Ratnapura</label>
+            </value>
+            <value>
+                <fullName>Badulla</fullName>
+                <default>false</default>
+                <label>Badulla</label>
+            </value>
+            <value>
+                <fullName>Hambantota</fullName>
+                <default>false</default>
+                <label>Hambantota</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>New Delhi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Gorakhpur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Mumbai</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Bangalore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Kolkata</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Chennai</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Hyderabad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Jaipur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Agra</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Varanasi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Pune</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Ahmedabad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Chandigarh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Kochi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Goa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Lucknow</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Amritsar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Mysore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Udaipur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Bhubaneswar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Nagpur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Indore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Kanpur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Patiala</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Coimbatore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Vadodara</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Surat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Thiruvananthapuram</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Bhopal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Rajkot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nepal</controllingFieldValue>
+            <valueName>Kathmandu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nepal</controllingFieldValue>
+            <valueName>Pokhara</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nepal</controllingFieldValue>
+            <valueName>Lalitpur (Patan)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nepal</controllingFieldValue>
+            <valueName>Bhaktapur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nepal</controllingFieldValue>
+            <valueName>Nepalgunj</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nepal</controllingFieldValue>
+            <valueName>Biratnagar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nepal</controllingFieldValue>
+            <valueName>Birgunj</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nepal</controllingFieldValue>
+            <valueName>Janakpur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nepal</controllingFieldValue>
+            <valueName>Dharan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nepal</controllingFieldValue>
+            <valueName>Butwal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nepal</controllingFieldValue>
+            <valueName>Hetauda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nepal</controllingFieldValue>
+            <valueName>Dhangadhi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>New York City, New York</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Los Angeles, California</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Chicago, Illinois</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Houston, Texas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Phoenix, Arizona</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Philadelphia, Pennsylvania</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>San Antonio, Texas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>San Diego, California</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Dallas, Texas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>San Jose, California</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Austin, Texas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Jacksonville, Florida</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>San Francisco, California</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Columbus, Ohio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Fort Worth, Texas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Indianapolis, Indiana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Charlotte, North Carolina</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Seattle, Washington</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Denver, Colorado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Washington, D.C.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Boston, Massachusetts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>El Paso, Texas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Nashville, Tennessee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Detroit, Michigan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Portland, Oregon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Las Vegas, Nevada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Oklahoma City, Oklahoma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Memphis, Tennessee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Louisville, Kentucky</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>United States</controllingFieldValue>
+            <valueName>Baltimore, Maryland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shree Lanka</controllingFieldValue>
+            <valueName>Colombo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shree Lanka</controllingFieldValue>
+            <valueName>Kandy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shree Lanka</controllingFieldValue>
+            <valueName>Galle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shree Lanka</controllingFieldValue>
+            <valueName>Anuradhapura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shree Lanka</controllingFieldValue>
+            <valueName>Jaffna</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shree Lanka</controllingFieldValue>
+            <valueName>Negombo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shree Lanka</controllingFieldValue>
+            <valueName>Matara</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shree Lanka</controllingFieldValue>
+            <valueName>Trincomalee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shree Lanka</controllingFieldValue>
+            <valueName>Batticaloa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shree Lanka</controllingFieldValue>
+            <valueName>Polonnaruwa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shree Lanka</controllingFieldValue>
+            <valueName>Nuwara Eliya</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shree Lanka</controllingFieldValue>
+            <valueName>Kurunegala</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shree Lanka</controllingFieldValue>
+            <valueName>Ratnapura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shree Lanka</controllingFieldValue>
+            <valueName>Badulla</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shree Lanka</controllingFieldValue>
+            <valueName>Hambantota</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

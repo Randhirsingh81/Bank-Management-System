@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>amount</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( ISPICKVAL(Transaction_Type__c, &apos;Withdrawal&apos;), 
+  (OR( 
+    ISNULL( Amount__c ),
+    Amount__c &lt;= 0,
+     Amount__c &gt; My_Accountss__r.Balance__c 
+
+)), false)</errorConditionFormula>
+    <errorDisplayField>Amount__c</errorDisplayField>
+    <errorMessage>Withdrawal Amount Can&apos;t be null or Grater than the yours&apos;  Account balance</errorMessage>
+</ValidationRule>
