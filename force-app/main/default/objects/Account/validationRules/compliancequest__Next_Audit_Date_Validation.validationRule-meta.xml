@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Next_Audit_Date_Validation</fullName>
+    <active>true</active>
+    <description>Next Audit Date should be greater than Last Audit Date</description>
+    <errorConditionFormula>AND( NOT($Permission.compliancequest__SQXDataMigrationCustomPermission), ISCHANGED( compliancequest__Next_Audit_Date__c )  ,  compliancequest__Next_Audit_Date__c &lt;= compliancequest__Last_Audit_Date__c)</errorConditionFormula>
+    <errorDisplayField>compliancequest__Next_Audit_Date__c</errorDisplayField>
+    <errorMessage>Next Audit Date should be greater than Last Audit Date</errorMessage>
+</ValidationRule>

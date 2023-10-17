@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CQ_RS_SQX_Account_Owner__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The account associated with the record.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is automatically populated when the account is created.</inlineHelpText>
+    <label>Account Owner</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Banks1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

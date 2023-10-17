@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Editable_Information_Supplier_Admin</fullName>
+    <description>Account VF Page</description>
+    <displayedFields>
+        <field>Website</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>compliancequest__Reason_For_Change__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Editable Information Supplier Admin</label>
+</FieldSet>

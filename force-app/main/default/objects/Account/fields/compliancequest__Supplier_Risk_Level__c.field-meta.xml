@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Supplier_Risk_Level__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Indicates the risk level of the supplier based on the supplier parts that are being provided by the account(supplier)</description>
+    <externalId>false</externalId>
+    <label>Supplier Risk Level</label>
+    <summarizedField>compliancequest__SQX_Supplier_Part__c.compliancequest__Supplier_Part_Risk_Level__c</summarizedField>
+    <summaryFilterItems>
+        <field>compliancequest__SQX_Supplier_Part__c.compliancequest__Active__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>compliancequest__SQX_Supplier_Part__c.compliancequest__Account__c</summaryForeignKey>
+    <summaryOperation>min</summaryOperation>
+    <type>Summary</type>
+</CustomField>

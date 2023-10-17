@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Status of the Supplier</description>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>compliancequest__Approval_Status__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Active</fullName>
+                <default>true</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+                <label>Inactive</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <valueName>Active</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Approved</controllingFieldValue>
+            <controllingFieldValue>Disapproved</controllingFieldValue>
+            <controllingFieldValue>Conditionally Approved</controllingFieldValue>
+            <valueName>Inactive</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

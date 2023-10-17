@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Account_Classification__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Specifies the CQ Classification for the account.</description>
+    <externalId>false</externalId>
+    <label>Account Classification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Combined Minority and Woman owned</fullName>
+                <default>false</default>
+                <label>Combined Minority and Woman owned</label>
+            </value>
+            <value>
+                <fullName>Disabled Veteran Owned</fullName>
+                <default>false</default>
+                <label>Disabled Veteran Owned</label>
+            </value>
+            <value>
+                <fullName>Disadvantaged</fullName>
+                <default>false</default>
+                <label>Disadvantaged</label>
+            </value>
+            <value>
+                <fullName>Foreign Owned Business Enterprise</fullName>
+                <default>false</default>
+                <label>Foreign Owned Business Enterprise</label>
+            </value>
+            <value>
+                <fullName>Government or Non-Profit</fullName>
+                <default>false</default>
+                <label>Government or Non-Profit</label>
+            </value>
+            <value>
+                <fullName>Hub Zone</fullName>
+                <default>false</default>
+                <label>Hub Zone</label>
+            </value>
+            <value>
+                <fullName>Large Business Enterprise</fullName>
+                <default>false</default>
+                <label>Large Business Enterprise</label>
+            </value>
+            <value>
+                <fullName>LGBT Owned</fullName>
+                <default>false</default>
+                <label>LGBT Owned</label>
+            </value>
+            <value>
+                <fullName>Minority Owned</fullName>
+                <default>false</default>
+                <label>Minority Owned</label>
+            </value>
+            <value>
+                <fullName>Minority Woman Owned</fullName>
+                <default>false</default>
+                <label>Minority Woman Owned</label>
+            </value>
+            <value>
+                <fullName>Small Business</fullName>
+                <default>false</default>
+                <label>Small Business</label>
+            </value>
+            <value>
+                <fullName>Veteran Owned</fullName>
+                <default>false</default>
+                <label>Veteran Owned</label>
+            </value>
+            <value>
+                <fullName>Woman Owned</fullName>
+                <default>false</default>
+                <label>Woman Owned</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

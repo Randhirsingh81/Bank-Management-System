@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>compliancequest__Disapproved_Account_Cant_Be_Active</fullName>
+    <active>true</active>
+    <description>This validation rule prevents any Disapproved accounts from being activated.</description>
+    <errorConditionFormula>AND( NOT($Permission.compliancequest__SQXDataMigrationCustomPermission), IF( ISPICKVAL(compliancequest__Approval_Status__c, &apos;Disapproved&apos;),
+IF(ISPICKVAL(compliancequest__Status__c,&apos;Inactive&apos;), false, true), false))</errorConditionFormula>
+    <errorDisplayField>compliancequest__Status__c</errorDisplayField>
+    <errorMessage>A supplier can not be disapproved and active.</errorMessage>
+</ValidationRule>
