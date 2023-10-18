@@ -9,7 +9,7 @@
 * ************************Revision History************************
 */
 @isTest
-public class CQ_RS_SQX_Bank_Completion_Date_FlowTest {
+public class CQ_RS_Test_Bank_Completion_Date_Flow {
     /**
 * Test method to validate an Auto-Launched Flow's behavior.
 */
