@@ -1,0 +1,22 @@
+.background-card {
+    background-image: url({bgimage});
+    background-color: rgb(208, 225, 250);
+     background-size: cover;
+    background-repeat: no-repeat;
+    /* color: #063a5e; */
+    border-radius: 4px;
+    text-align: center;
+    padding : 10px; /* Adjust spacing as needed */
+    /* Add other styles as needed */
+    
+}
+
+h1{
+    text-decoration:rgb(55, 89, 122);
+    font-weight: bold;
+    font-size: 15px;
+    font-style: oblique;
+} 
+h2{
+    color: rgb(74, 26, 26);
+}

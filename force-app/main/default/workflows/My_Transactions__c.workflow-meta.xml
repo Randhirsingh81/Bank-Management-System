@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Reject_Transaction</fullName>
+        <description>Reject Transaction</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Transaction_Approval_templates/Transaction_Approval_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Success_Transaction</fullName>
+        <description>Success Transaction</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <field>LastModifiedById</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Transaction_Approval_templates/Transaction_Confirmation</template>
+    </alerts>
+    <alerts>
+        <fullName>TVASJGSADJH</fullName>
+        <description>TVASJGSADJH</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Account_Approval_request/Account_Approval_success_status</template>
+    </alerts>
+    <alerts>
+        <fullName>hhhhhhhhhhhhhhhhhhhhhhhh</fullName>
+        <description>hhhhhhhhhhhhhhhhhhhhhhhh</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Balance_alert/Weekly_Account_Summary</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Transaction_status_update</fullName>
+        <field>Transaction_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Transaction status update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Transaction_status</fullName>
+        <field>Transaction_Status__c</field>
+        <literalValue>Success</literalValue>
+        <name>Update Transaction status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Transaction_status_to_rejected</fullName>
+        <field>Transaction_Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Update Transaction status to rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Transaction_status_to_success</fullName>
+        <field>Transaction_Status__c</field>
+        <literalValue>Success</literalValue>
+        <name>Update Transaction status to success</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

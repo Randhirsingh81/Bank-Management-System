@@ -1,0 +1,16 @@
+/* myCustomStyles.css */
+.custom-card {
+    border: 3px solid #5d5959;
+    background-color: rgb(196, 220, 236);
+    border-radius: 3px;
+    align-items: center;
+
+
+}
+.parent{
+    align-items: center;
+    height: 650;
+    width: 700;
+
+}
+/* Add more styles as needed */

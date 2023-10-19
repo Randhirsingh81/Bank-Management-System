@@ -1,0 +1,43 @@
+<template>
+    <lightning-card class="tablehead" title="Recents Transactions">
+        <div class="tablehead" title="Recents Transactions">
+
+        <div class="button">
+            <lightning-button label={buttonLabel} onclick={toggleTable}></lightning-button>
+            <!-- <lightning-button label="Show Transactions" onclick={showTable} if:false={showTableFlag}></lightning-button>
+            <lightning-button label="Hide Transactions" onclick={hideTable} if:true={showTableFlag}></lightning-button> -->
+        </div>
+        
+    <div if:true={showTableFlag} class="Table" > 
+        <template if:true={transactions}>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr>
+                        <th scope="col">Owner Name</th>
+                        <th scope="col">Transaction Amount($)</th>
+                        <th scope="col">Transaction Type</th>
+                        <th scope="col">Transaction Status</th>
+                        <th scope="col">Transaction date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={transactions} for:item="transaction">
+                        <tr key={transaction.Id}>
+                            <td>{transaction.My_Accountss__r.Name}</td>
+                            <td>{transaction.Amount__c}</td>
+                            <td>{transaction.Transaction_Type__c}</td>
+                            <td>{transaction.Transaction_Status__c}</td>
+                            <td>{transaction.Transaction_date__c}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </template>
+        <template if:false={transactions}>
+            No transactions found.
+        </template>
+    </div>
+    
+</div>
+</lightning-card>
+</template>

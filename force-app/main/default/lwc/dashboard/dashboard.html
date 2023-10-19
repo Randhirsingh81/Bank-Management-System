@@ -1,0 +1,28 @@
+<template> 
+    <div class="dashboard">
+   <h1>Click below for the all Reports of the transactions</h1>
+   <br>
+   <h2>Click here for the Dashboard</h2>
+        <lightning-button label="Open Dashboard" onclick={navigateToReportChart}></lightning-button>
+
+    </div>
+
+    <div class="dashboard">
+        <h1>Click below for the all Approvals Requests</h1>
+        <br>
+        <h2>Click here for the Approvals Requests</h2>
+        <lightning-button label="Show Approval Requests" onclick={showApprovalRequests}></lightning-button>
+     
+         </div>
+
+         <template if:true={showRequests}>
+            <!-- Display the list of approval requests here -->
+            <ul>
+                <template for:each={approvalRequests} for:item="request">
+                    <li key={request.Id}>{request.Name}</li>
+                </template>
+            </ul>
+        </template>
+        
+   
+</template>

@@ -1,0 +1,19 @@
+.dashboard{
+    background-color: rgb(208, 225, 250);
+    background-size: cover;
+   background-repeat: no-repeat;
+   /* color: #063a5e; */
+   border-radius: 4px;
+   text-align: center;
+   padding : 10px; 
+}
+
+h1{
+    text-decoration:rgb(55, 89, 122);
+    font-weight: bold;
+    font-size: 15px;
+    font-style: oblique;
+} 
+h2{
+    color: rgb(74, 26, 26);
+}

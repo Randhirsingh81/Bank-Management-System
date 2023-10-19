@@ -1,0 +1,4 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:hasSObjectName,lightning:actionOverride" access="global" >
+    <c:heading label = "New Customer"></c:heading>
+    <c:newCustomerRecord/>
+</aura:component>

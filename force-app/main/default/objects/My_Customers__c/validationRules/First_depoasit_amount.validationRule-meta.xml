@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_depoasit_amount</fullName>
+    <active>true</active>
+    <description>First deposit amount should be greater then 500</description>
+    <errorConditionFormula>First_Deposit_Amount__c  &lt; 5000</errorConditionFormula>
+    <errorDisplayField>First_Deposit_Amount__c</errorDisplayField>
+    <errorMessage>First Deposit amount should be grater then 5000</errorMessage>
+</ValidationRule>
