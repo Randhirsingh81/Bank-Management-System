@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>CQ_RS_Department__c</columns>
+    <columns>CQ_RS_Working_Days__c</columns>
+    <columns>CQ_RS_Work_Staus__c</columns>
+    <columns>CQ_RS_SQX_Account_Owner__c</columns>
+    <columns>CQ_RS_Completion_Date__c</columns>
+    <columns>CQ_RS_SQX_Part_Family__c</columns>
+    <columns>CQ_RS_SQX_Part__c</columns>
+    <columns>Test__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

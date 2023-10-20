@@ -1,0 +1,70 @@
+<template>
+    <c-cq-grid  grid-config={gridConfig} grid-columns={gridColumns} rows={data} ongridaction={onGridAction}></c-cq-grid>
+
+     
+            <template if:true={popups.std_new}>
+                <c-cq-popup oncloseclicked={hidePopup} name="std_new" grid-help-text={showHelpText}>
+                <h1 slot="header">{gridTitle}</h1>
+                <div slot="content">
+                        
+                        
+                    <c-cqui-r-s-rs-employees-both class="childform" form-changes={childRecordChanges} hide-save=true record-id={selectedRecordId} parent-record={parentRecord} parent-record-id={parentId} record-type-id={selectedRecordTypeId}></c-cqui-r-s-rs-employees-both>
+                    
+                </div>
+                <h1 slot="footerButtons">
+                    <ul class="slds-button-group-list">
+                        <li>
+                            <div class="slds-button-group" role="group">
+                            
+                                    <lightning-button label={cancelGridRecord} onclick={hidePopup} name="std_new"></lightning-button>&nbsp;&nbsp;
+                                    <template if:true={showSaveAndNew}>
+                                        <lightning-button label={saveAndNewGridRecord} onclick={saveAndNew}></lightning-button>&nbsp;&nbsp;
+                                    </template>
+                                    <lightning-button variant="brand" label={saveGridRecord} onclick={saveTheRecord}></lightning-button>
+                            
+                            
+                            </div>
+                        </li> 
+                    </ul>
+                </h1>
+            </c-cq-popup>
+            </template>
+        
+     
+            <template if:true={popups.showEditSelected}>
+                <c-cq-popup oncloseclicked={hidePopup} name="showEditSelected" grid-help-text={showHelpText}>
+                <h1 slot="header">{gridTitle}</h1>
+                <div slot="content">
+                        
+                            <template for:each={selectedItems} for:item='item'>
+                                    <div key={item.key} class="slds-box">
+                                        <div>
+                                                <c-cqui-r-s-rs-employees-both class="childeditform" form-changes={item.childRecordChanges} hide-save=true record-id={item.selectedRecordId} parent-record={parentRecord} parent-record-id={parentId} record-type-id={item.selectedRecordTypeId}></c-cqui-r-s-rs-employees-both>
+                                        </div>
+                                    </div>
+                                </template>
+                        
+                        
+                </div>
+                <h1 slot="footerButtons">
+                    <ul class="slds-button-group-list">
+                        <li>
+                            <div class="slds-button-group" role="group">
+                            
+                            
+                                    <lightning-button label={cancelGridRecord} onclick={hidePopup} name="showEditSelected"></lightning-button>&nbsp;&nbsp;
+                                    <lightning-button variant="brand" label={saveGridRecord} onclick={updateEditSelected}></lightning-button>
+                            
+                            </div>
+                        </li> 
+                    </ul>
+                </h1>
+            </c-cq-popup>
+            </template>
+        
+    
+
+    
+        
+
+</template>
