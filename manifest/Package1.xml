@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>CQ_RS_Bank_Test_start_Date</members>
+        <members>CQ_RS_Test_Banks</members>
+        <members>CQ_RS_Test_Employees</members>
+        <name>ApexClass</name>
+    </types>
+    <version>58.0</version>
+</Package>

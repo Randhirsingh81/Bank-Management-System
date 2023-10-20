@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Start_date_validation_rule</fullName>
+    <fullName>CQ_RS_Start_date_validation_rule</fullName>
     <active>true</active>
     <errorConditionFormula>CQ_RS_Completion_Date__c  &lt;  CQ_RS_Start_Date__c</errorConditionFormula>
     <errorMessage>Start date must be less the completed date</errorMessage>
